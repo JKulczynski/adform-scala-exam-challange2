@@ -1,0 +1,50 @@
+= Scala Academy Exam Challange 2
+
+*The content of the task:*
+Write a Kafka Streams application that does the following transformations:
+
+-Words to upper case letters
+
+-Multiplies positive numbers by a number given on command line
+
+-Adds “negative number: “ prefix to negative numbers
+
+
+:library: Asciidoctor
+:idprefix:
+:numbered:
+:imagesdir: images
+:experimental:
+:toc: preamble
+:toc-title: pass:[<h3>Table od contents</h3>]
+ifdef::env-github[]
+:note-caption: :information_source:
+:tip-caption: :bulb:
+endif::[]
+
+*Dependencies*
+
+To run this app you need IDE(i use InteliJ), Scala and kafka
+
+You need also ad to your build.sbt:
+
+----
+libraryDependencies += "org.apache.kafka" % "kafka-streams" % "3.1.0"
+libraryDependencies += "org.apache.kafka" %% "kafka-streams-scala" % "3.1.0"
+----
+
+*How to run?*
+
+Clone this repository, start kafka zookeeper, and kafka.
+
+----
+Open a command prompt and start the Zookeeper:
+
+C:\kafka_2.12-0.10.2.1>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+----
+----
+Open a new command prompt and start the Apache Kafka:
+C:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-server-start.bat .\config\server.properties
+----
+*Troubleshooting*
+
